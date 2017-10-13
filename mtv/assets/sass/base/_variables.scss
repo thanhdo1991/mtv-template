@@ -1,0 +1,71 @@
+// Breakpoints
+$medium-screen: 600px;
+$large-screen: 900px;
+
+// Typography
+$base-font-family: $helvetica;
+$heading-font-family: $base-font-family;
+$base-font-size: 16px;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$blue: #1565c0;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+
+$color-purple: #c31c8a;
+$color-navy: #0c62ad;
+$color-blue: #00adf2;
+$color-dark-gray: #333;
+$color-white: #fff;
+$color-gray: #a8a8a8;
+$color-light-blue: #186ab1;
+$color-gray-38: #38393a;
+$color-light-purple: #f27328;
+$color-pink: #8f298b;
+$color-gray-f8: #f8f8f8;
+$color-light-blue: #003f75;
+$color-gray-5c: #5c5c5c;
+$color-gray-d8: #d8d8d8;
+$color-gray-88: #888;
+$color-gray-ef: #efeded;
+
+// MTV
+$color-brown: #322C26;
+$color-dark-brown: #36302a;
+$footer-brown: #cbab8c;
+$button-yellow: #f0b336;
+$button-yellow1: #36302a;
+$button-yellow-action: #f5d258;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $blue;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;

@@ -1,0 +1,57 @@
+.bg-bluelight {
+  background-color: $blueLight;
+  color: $white;
+}
+
+.bg-white {
+  background-color: $white;
+  color: $gray-2e;
+}
+
+.bg-dark {
+  background-color: $gray-2d;
+  color: $white;
+}
+
+.bg-light {
+  background-color: $gray-f8;
+  color: $blueLight;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.skewed {
+  position: relative;
+
+  &:before,
+  &:after {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    transform-origin: right bottom;
+    transform: skewY(-3.076687514deg);
+    width: 100%;
+    z-index: -1;
+
+    @media #{$medium} {
+      transform: skewY(-6deg);
+    }
+  }
+
+  &:before {
+    transform-origin: left top;
+  }
+
+  &:after {
+    transform: skewY(-3.540662467deg);
+
+    @media #{$medium} {
+      transform: skewY(-5.5deg);
+    }
+  }
+}

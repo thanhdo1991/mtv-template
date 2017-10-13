@@ -1,0 +1,32 @@
+$fonts-dir: '../fonts';
+
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('#{$fonts-dir}/HelveticaNeue.eot');
+  src: url('#{$fonts-dir}/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+    url('#{$fonts-dir}/HelveticaNeue.woff') format('woff'),
+    url('#{$fonts-dir}/HelveticaNeue.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('#{$fonts-dir}/HelveticaNeue-Medium.eot');
+  src: url('#{$fonts-dir}/HelveticaNeue-Medium?#iefix') format('embedded-opentype'),
+    url('#{$fonts-dir}/HelveticaNeue-Medium.woff') format('woff'),
+    url('#{$fonts-dir}/HelveticaNeue-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('#{$fonts-dir}/HelveticaNeue-Bold.eot');
+  src: url('#{$fonts-dir}/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),
+    url('#{$fonts-dir}/HelveticaNeue-Bold.woff') format('woff'),
+    url('#{$fonts-dir}/HelveticaNeue-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

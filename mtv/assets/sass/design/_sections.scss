@@ -1,0 +1,153 @@
+.intro {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $color-white;
+  padding-bottom: 138px;
+  padding-top: 25px;
+  position: relative;
+  text-align: left;
+
+  @media #{$small} {
+    padding-bottom: 120px;
+    padding-top: 90px;
+  }
+
+  &:before {
+    @include position(absolute, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.0001) 0%, $color-light-blue 100%);
+    content: '';
+    opacity: 0.6;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  h1 {
+    @media #{$large} {
+      font-size: em(72px);
+      line-height: .95;
+      margin-bottom: 56px;
+    }
+  }
+
+  h2 {
+    padding-right: 5px;
+
+    @media #{$large} {
+      font-size: em(48px);
+      margin-bottom: 9px;
+    }
+  }
+
+  p {
+    font-size: em(28px);
+    margin-bottom: 1.5em;
+
+    @media #{$large} {
+      margin-bottom: 56px;
+    }
+  }
+
+  .action {
+    padding-right: 7px;
+
+    .button {
+      margin-bottom: 15px;
+      margin-left: 17px;
+
+      @media #{$small} {
+        padding: 15px 30px;
+      }
+    }
+  }
+}
+
+.box-text {
+  padding: 45px 8% 49px;
+
+  @media #{$medium} {
+    padding: 30px 8%;
+  }
+
+  &.shadow {
+    box-shadow: 0px 0px 15px rgba($color-gray-5c, .105271);
+  }
+}
+
+.upper-layer {
+  margin-top: -38px;
+  padding-top: 0;
+  position: relative;
+  z-index: 1;
+
+  h2 {
+    margin-bottom: 28px;
+
+    @media #{$medium} {
+      margin-bottom: .8em;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 33px;
+  }
+}
+
+#events,
+#sponsors {
+  .section-title {
+    font-size: em(24px);
+    margin-bottom: 57px;
+  }
+}
+
+#events {
+  .section-title {
+    margin-bottom: 65px;
+  }
+}
+
+#speakers {
+  @media #{$small} {
+    padding-bottom: 0;
+  }
+
+  .section-title {
+    margin-bottom: 80px;
+  }
+}
+
+#social {
+  padding-top: 34px;
+
+  @media #{$small} {
+    padding: 10px 0;
+  }
+}
+
+#sponsors {
+  padding: 46px 0 44px;
+
+  @media #{$small} {
+    padding: 20px 0;
+  }
+}
+
+#events,
+#sponsors,
+#speakers {
+  .section-title {
+    @media #{$medium} {
+      margin-bottom: 40px;
+    }
+
+    @media #{$small} {
+      margin-bottom: 25px;
+    }
+  }
+}

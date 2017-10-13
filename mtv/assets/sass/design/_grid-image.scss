@@ -1,0 +1,62 @@
+.grid-image {
+  @include clearfix;
+
+  &-item {
+    @media #{$medium} {
+      margin-bottom: 35px;
+
+      &:nth-child(3) {
+        clear: left;
+      }
+    }
+
+    @media #{$small} {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .image {
+      background-color: $color-gray-d8;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 0;
+      margin-bottom: 53px;
+      padding-bottom: 67%;
+
+      @media #{$medium} {
+        margin-bottom: 25px;
+        padding-bottom: 90%;
+      }
+
+      @media #{$small} {
+        margin-bottom: 1em;
+        padding-bottom: 70%;
+      }
+
+      @media #{$tiny} {
+        padding-bottom: 90%;
+      }
+  }
+
+  p {
+    font-size: em(14px);
+    line-height: 1.67;
+  }
+
+  .section-title {
+    font-size: em(28px);
+    margin-bottom: 50px;
+
+    @media #{$medium} {
+      font-size: 1.5em;
+      margin-bottom: 1.5em;
+    }
+  }
+
+  article {
+    text-align: center;
+  }
+}

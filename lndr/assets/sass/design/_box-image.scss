@@ -1,0 +1,127 @@
+.box-image {
+  margin-bottom: 10px;
+  padding: 0 15px;
+
+  @media #{$medium} {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  @media #{$small} {
+    margin-bottom: 29px;
+  }
+
+  @media #{$large} {
+    margin-bottom: 38px;
+    padding: 0 15px 0 121px;
+  }
+
+  .box-left {
+    float: left;
+    padding-right: 20px;
+    padding-top: 48px;
+    position: relative;
+    width: 45%;
+    z-index: 1;
+
+    @media #{$medium} {
+      padding-right: 10px;
+      padding-top: 0;
+      width: 50%;
+    }
+
+    @media #{$large} {
+      width: 43.5%;
+    }
+
+    article {
+      p {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 43px;
+
+        @media #{$medium} {
+          font-size: 16px;
+        }
+
+        @media #{$small} {
+          font-size: 12px;
+          line-height: em(16px, 12px);
+          margin-bottom: 21px;
+        }
+      }
+
+      h2 {
+        margin-bottom: 31px;
+
+        @media #{$small} {
+          margin-bottom: 19px;
+        }
+      }
+    }
+
+    .action {
+      padding-left: 1px;
+    }
+
+    #{$all-buttons} {
+      background-color: $gray-2e;
+      padding: 22px 50px;
+
+      @media #{$medium} {
+        padding: 18px 40px;
+      }
+
+      @media #{$small} {
+        padding: 10px 26.5px;
+      }
+
+      @media #{$large} {
+        padding: 26px 58px;
+      }
+
+      &:hover {
+        background-color: shade($gray-2e, 20%);
+      }
+    }
+  }
+
+  .box-right {
+    float: left;
+    padding-left: 10px;
+    width: 55%;
+
+    @media #{$medium} {
+      padding-top: 50px;
+      width: 50%;
+    }
+
+    @media #{$large} {
+      width: 56.5%;
+    }
+
+    img {
+      @media #{$large} {
+        margin-left: -48px;
+        max-width: inherit;
+        width: calc(100% + 48px);
+      }
+    }
+  }
+}
+
+.feedback {
+  padding: 80px 0;
+
+  @media #{$medium} {
+    padding: 70px 0;
+  }
+
+  @media #{$small} {
+    padding: 37px 0;
+  }
+
+  @media #{$large} {
+    padding: 104px 0;
+  }
+}

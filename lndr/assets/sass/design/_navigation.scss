@@ -1,0 +1,48 @@
+.menu {
+  @include clearfix;
+
+  li {
+    display: inline-block;
+    margin-left: 30px;
+
+    @media #{$small} {
+      margin-left: 20px;
+    }
+
+    a {
+      color: $white;
+      font-weight: 400;
+      text-decoration: none;
+
+      &:hover {
+        color: shade($white, 10%);
+      }
+    }
+  }
+}
+
+.main-navigation {
+  .menu {
+    li {
+      a {
+        @media #{$small} {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.footer-navigation {
+  .menu {
+    li {
+      @media #{$small} {
+        margin-left: 28px;
+
+        &:first-of-type {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

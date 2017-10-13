@@ -1,0 +1,28 @@
+{
+  "name": "ymca-event",
+  "description": "A simple event template for use with YMCA",
+  "main": "index.html",
+  "authors": [
+    "Igor Putina"
+  ],
+  "license": "GPL-2.0",
+  "keywords": [
+    "template",
+    "responsive",
+    "drupal",
+    "ffw"
+  ],
+  "homepage": "https://github.com/makehero/ymca-event",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/js/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

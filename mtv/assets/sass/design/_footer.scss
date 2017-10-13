@@ -1,0 +1,68 @@
+// Footer related styles
+#footer {
+    padding: 20px 0 20px;
+    background-color: rgba($color-brown, 0.95);
+
+    @media #{$medium} {
+        padding: 2em 0;
+    }
+
+    nav {
+        text-align: center;
+
+        ul {
+            list-style: none;
+            margin: 0 auto;
+            width: auto;
+            float: right;
+
+            li {
+                display: inline-block;
+
+                a,
+                a:link,
+                a:visited {
+                    color: $footer-brown;
+                    font-size: 0.8125em;
+                    line-height: 40px;
+                    padding: 20px 14px;
+                    text-decoration: none;
+
+                    @media #{$small} {
+                        font-size: 1.1em;
+                        line-height: 28px;
+                        padding: 20px 10px;
+                    }
+                }
+
+                a:hover,
+                a:active {
+                    text-decoration: none;
+                    color:white;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        padding: 2em;
+
+        @media #{$medium} {
+            padding: 1em 2em;
+        }
+
+        h3, h4, h5, p {
+            color: $footer-brown;
+            display: block;
+            font-size: 13px;
+            line-height: 1.4;
+            text-align: right;
+            font-style:italic;
+            width: 100%;
+
+            strong {
+                font-weight: bold;
+            }
+        }
+    }
+}

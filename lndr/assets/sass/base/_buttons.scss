@@ -1,0 +1,55 @@
+#{$all-buttons} {
+  appearance: none;
+  background-color: $action-color;
+  border: 0;
+  border-radius: 100px;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  line-height: 1;
+  padding: 20px 35px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  @media #{$medium} {
+    font-size: 16px;
+    padding: 15px 32px;
+  }
+
+  @media #{$small} {
+    font-size: 10px;
+    padding: 10px 23px;
+  }
+
+  @media #{$large} {
+    font-size: 20px;
+    padding: 26px 40px;
+  }
+
+  &:hover {
+    background-color: shade($action-color, 20%);
+    color: #fff;
+  }
+
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $action-color;
+    }
+  }
+}

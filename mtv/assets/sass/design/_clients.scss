@@ -1,0 +1,31 @@
+.clients {
+  @include clearfix;
+  clear: both;
+
+  .client {
+    height: 0;
+    padding-bottom: 45%;
+    position: relative;
+
+    @media #{$medium} {
+      padding-bottom: 66%;
+    }
+
+    @media #{$small} {
+      padding-bottom: 55%;
+    }
+  }
+
+  &-item {
+    @media #{$medium} {
+      margin-bottom: 20px;
+    }
+  }
+
+  img {
+    @include position(absolute, 50% null auto 50%);
+    max-width: 50%;
+    opacity: .3;
+    transform: translate(-50%, -50%);
+  }
+}

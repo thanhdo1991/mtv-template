@@ -1,0 +1,87 @@
+.header {
+  padding-bottom: 30px;
+  padding-top: 40px;
+
+  @media #{$medium} {
+    padding-bottom: 27px;
+    padding-top: 34px;
+  }
+
+  @media #{$large} {
+    padding-bottom: 37px;
+    padding-top: 110px;
+  }
+
+  > .container {
+    @include grid-container;
+
+    .left-content {
+      float: left;
+    }
+
+    .right-content {
+      float: right;
+      padding: 38px 46px 38px 0;
+
+      @media #{$medium} {
+        @include clearfix;
+        padding: 24px 0;
+      }
+
+      @media #{$small} {
+        padding: 23px 0;
+      }
+    }
+  }
+
+  .logo {
+    h1 {
+      font-size: 1.9em;
+      margin: 0;
+      padding: 0;
+
+      @media #{$small} {
+        font-size: 1.2em;
+      }
+
+      > a {
+        display: block;
+        margin: 10px 0;
+        outline: none;
+        text-decoration: none;
+
+        @media #{$small} {
+          margin: 5px 0;
+        }
+
+        &.image {
+          background-position: left center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 75px;
+          max-width: 240px;
+          overflow: hidden;
+          text-indent: 260px;
+          transition: all .3s ease;
+          white-space: nowrap;
+
+          @media #{$medium} {
+            height: 65px;
+            max-width: 140px;
+            text-indent: 150px;
+          }
+
+          @media #{$small} {
+            height: 51px;
+            max-width: 55px;
+            text-indent: 70px;
+          }
+        }
+      }
+    }
+  }
+
+  .main-navigation {
+    float: right;
+  }
+}

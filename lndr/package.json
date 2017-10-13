@@ -1,0 +1,36 @@
+{
+  "name": "frontend-starter",
+  "version": "1.0.0",
+  "description": "A simple starter template for easy frontend design and development",
+  "private": true,
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build",
+    "bundle": "gulp bundle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/preist/frontend-starter"
+  },
+  "keywords": [],
+  "author": "Igor Putina",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/preist/frontend-starter/issues/"
+  },
+  "homepage": "https://github.com/preist/frontend-starter",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglifycss": "^1.0.6"
+  }
+}

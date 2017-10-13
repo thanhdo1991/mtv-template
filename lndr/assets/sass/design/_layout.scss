@@ -1,0 +1,58 @@
+// Basic Layout Considerations
+body > section {
+  @include clearfix();
+
+  > .container {
+    @include grid-container;
+    margin: 0 auto;
+    max-width: $page-width;
+  }
+
+  > .container-medium {
+    max-width: $page-medium-width;
+  }
+}
+
+.grid-3 {
+  @include grid-column(3);
+
+  @media #{$medium} {
+    @include grid-column(6, $medium-grid);
+
+    &:nth-child(4n + 3) {
+      clear: both;
+    }
+  }
+
+  @media #{$small} {
+    @include grid-column(6, $small-grid);
+
+    &:nth-child(4n + 3) {
+      clear: none;
+    }
+  }
+}
+
+.grid-4 {
+  @include grid-column(4);
+
+  @media #{$medium} {
+    @include grid-column(6, $medium-grid);
+  }
+
+  @media #{$small} {
+    @include grid-column(6, $small-grid);
+  }
+}
+
+.grid-12 {
+  @include grid-column(12);
+
+  @media #{$medium} {
+    @include grid-column(12, $medium-grid);
+  }
+
+  @media #{$small} {
+    @include grid-column(6, $small-grid);
+  }
+}

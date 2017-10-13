@@ -1,0 +1,91 @@
+.footer {
+  padding-bottom: 16px;
+  padding-top: 20px;
+
+  @media #{$small} {
+    padding-bottom: 15px;
+    padding-top: 17px;
+  }
+
+  > .container {
+    @include grid-container;
+
+    .left-content {
+      float: left;
+      padding-left: 24px;
+
+      @media #{$medium} {
+        padding-left: 0;
+      }
+    }
+
+    .right-content {
+      float: right;
+      padding: 14px 0;
+
+      @media #{$medium} {
+        @include clearfix;
+        padding: 15px 0;
+      }
+
+      @media #{$small} {
+        padding: 12px 0;
+      }
+    }
+  }
+
+  .logo {
+    @media #{$small} {
+      margin-left: -3px;
+    }
+
+    h1 {
+      font-size: 1.9em;
+      margin: 0;
+      padding: 0;
+
+      @media #{$small} {
+        font-size: 1.2em;
+      }
+
+      > a {
+        display: block;
+        margin: 10px 0;
+        outline: none;
+        text-decoration: none;
+
+        @media #{$small} {
+          margin: 5px 0;
+        }
+
+        &.image {
+          background-position: left center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 33px;
+          max-width: 240px;
+          overflow: hidden;
+          text-indent: 260px;
+          transition: all .3s ease;
+          white-space: nowrap;
+
+          @media #{$medium} {
+            height: 40px;
+            max-width: 140px;
+            text-indent: 150px;
+          }
+
+          @media #{$small} {
+            height: 34px;
+            max-width: 55px;
+            text-indent: 70px;
+          }
+        }
+      }
+    }
+  }
+
+  .main-navigation {
+    float: right;
+  }
+}

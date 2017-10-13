@@ -1,0 +1,28 @@
+{
+  "name": "frontend-starter",
+  "description": "A simple starter template for easy frontend design and development",
+  "main": "index.html",
+  "authors": [
+    "Igor Putina"
+  ],
+  "license": "GPL-2.0",
+  "keywords": [
+    "template",
+    "responsive",
+    "drupal",
+    "ffw"
+  ],
+  "homepage": "https://github.com/preist/frontend-starter",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/js/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

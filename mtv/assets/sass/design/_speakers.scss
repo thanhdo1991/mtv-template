@@ -1,0 +1,52 @@
+.speakers {
+  @include clearfix;
+  clear: both;
+
+  &-item {
+    @media #{$medium} {
+      margin-bottom: 2em;
+
+      &:nth-child(3) {
+        clear: left;
+      }
+    }
+
+    @media #{$small} {
+      margin-bottom: 1.5em;
+    }
+  }
+
+  &-image {
+    background-color: $color-gray-d8;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 0;
+    margin-bottom: 22px;
+    padding-bottom: 100%;
+
+    @media #{$small} {
+      margin-bottom: 1em;
+      padding-bottom: 80%;
+    }
+
+    @media #{$tiny} {
+      padding-bottom: 90%;
+    }
+  }
+
+  h3 {
+    font-size: em(22px);
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: em(14px);
+    color: $color-gray-88;
+  }
+
+  article {
+    margin-bottom: 15px;
+  }
+}

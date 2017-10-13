@@ -1,0 +1,219 @@
+$light-gray-backgorund: #f8f8f8;
+$navigation-height: 50px;
+$give-button-color: $color-purple;
+
+#header > .container {
+    @include grid-container;
+
+    .left-content {
+        @include grid-column(4);
+
+        @media #{$medium} {
+            @include grid-column(2, $small-grid);
+        }
+    }
+
+    .right-content {
+        @include grid-column(8);
+
+        @media #{$small} {
+            float: none;
+            width: 100%;
+            margin: 0;
+            background-color: rgba($color-navy, 0.95);
+        }
+    }
+}
+
+#intro {
+  .logo {
+    height: $navigation-height;
+    transition: all .3s ease;
+    margin-bottom:100px;
+
+    @media #{$small} {
+      height: 58px;
+    }
+
+    h1 {
+      font-size: 1.4em;
+      line-height: $navigation-height;
+      margin: 0;
+      padding: 0;
+
+      @media #{$small} {
+        line-height: 58px;
+      }
+    }
+
+    h1 > a {
+      color: $color-navy;
+      outline: none;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-blue;
+      }
+
+      &.image {
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        height: 55px;
+        margin: 17.5px auto 0px auto;
+        max-width: 413px;
+        overflow: hidden;
+        text-indent: 450px;
+        transition: all .3s ease;
+
+        @media #{$small} {
+          height: 42px;
+          margin: 8px 0px;
+          max-width: 200px;
+          text-indent: 220px;
+        }
+      }
+    }
+  }
+}
+
+#header {
+    background-color: $light-gray-backgorund;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding: 0;
+
+    .logo {
+        height: $navigation-height;
+        transition: all .3s ease;
+
+        @media #{$small} {
+            height: 58px;
+        }
+
+        h1 {
+            font-size: 1.4em;
+            line-height: $navigation-height;
+            margin: 0;
+            padding: 0;
+
+            @media #{$small} {
+                line-height: 58px;
+            }
+        }
+
+        h1 > a {
+            color: $color-navy;
+            outline: none;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-blue;
+            }
+
+            &.image {
+                background-position: left center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: block;
+                float: left;
+                height: 60px;
+                margin: 17.5px 0px;
+                max-width: 240px;
+                overflow: hidden;
+                text-indent: 260px;
+                transition: all .3s ease;
+
+                @media #{$small} {
+                    height: 42px;
+                    margin: 8px 0px;
+                    max-width: 200px;
+                    text-indent: 220px;
+                }
+            }
+        }
+    }
+
+    nav.top {
+        float: right;
+
+        @media #{$small} {
+            float: none;
+        }
+
+        ul {
+            li {
+                float: left;
+
+                @media #{$small} {
+                    float: none;
+                }
+            }
+        }
+
+        a,
+        a:link,
+        a:visited {
+            border-top: 2px solid transparent;
+            color: $color-dark-gray;
+            display: block;
+            font-size: 1em;
+            font-weight: medium;
+            height: $navigation-height - 2px;
+            line-height: $navigation-height - 4px;
+            outline: none;
+            padding-left: 14px;
+            padding-right: 14px;
+            text-decoration: none;
+
+            @media #{$small} {
+                border-top: 0;
+                color: $color-white;
+                height: auto;
+                line-height: 1;
+                padding: 17px;
+            }
+
+            &.give-button {
+                background-color: $color-purple;
+                border-radius: 8px;
+                border-top: 0;
+                color: $color-white;
+                height: 30px;
+                line-height: 30px;
+                margin: 32px 16px 30px 16px;
+                padding: 0 14px;
+
+                @media #{$small} {
+                    background-color: transparent;
+                    border-radius: 0;
+                    color: $color-white;
+                    height: auto;
+                    line-height: 1;
+                    margin: 0;
+                    padding: 17px;
+
+                    &:hover,
+                    &:active {
+                        color: $color-white;
+                        background-color: rgba($color-white, .18);
+                    }
+                }
+            }
+        }
+
+        a:hover,
+        a:active {
+            background-color: $color-white;
+            border-top: 2px solid $color-purple;
+            color: $color-blue;
+
+            @media #{$small} {
+                background-color: rgba($color-white, .18);
+                border-top: 0;
+                color: $color-white;
+            }
+        }
+    }
+}

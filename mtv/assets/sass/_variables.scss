@@ -1,0 +1,55 @@
+// --------------------------
+// Variables
+// --------------------------
+
+$fa-font-path : "../fonts/font-awesome" !default;
+
+$brand-primary : #CCCCCC;
+
+$body-bg-color : #DDDDDD;
+
+// Breakpoints
+$tiny-breakpoint: 360px;
+$small-breakpoint: 580px;
+$medium-breakpoint: 900px;
+$large-breakpoint: 1240px;
+
+// Media queries
+$large: "only screen and (min-width: #{$large-breakpoint})";
+$medium: "only screen and (max-width: #{$medium-breakpoint})";
+$small: "only screen and (max-width: #{$small-breakpoint})";
+$tiny: "only screen and (max-width: #{$tiny-breakpoint})";
+
+// Neat settings
+$neat-grid: (
+  columns: 12,
+  gutter: 30px,
+);
+
+$medium-grid: (
+  columns: 12,
+  gutter: 20px,
+);
+
+$small-grid: (
+  columns: 6,
+  gutter: 20px
+);
+
+$touching-grid: (
+  columns: 1,
+  gutter: 0
+);
+
+$page-width: 1250px + (2 * 30px);
+
+$helvetica: (
+  "HelveticaNeue",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Helvetica",
+  "Roboto",
+  "Noto",
+  "Ubuntu",
+  sans-serif
+);

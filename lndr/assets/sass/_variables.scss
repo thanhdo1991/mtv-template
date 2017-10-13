@@ -1,0 +1,57 @@
+// --------------------------
+// Variables
+// --------------------------
+
+$fa-font-path : "../fonts/font-awesome" !default;
+
+$brand-primary : #CCCCCC;
+
+$body-bg-color : #DDDDDD;
+
+// Breakpoints
+$tiny-breakpoint: 360px;
+$small-breakpoint: 580px;
+$medium-breakpoint: 900px;
+$large-breakpoint: 1440px;
+
+// Media queries
+$large: "only screen and (min-width: #{$large-breakpoint})";
+$medium: "only screen and (max-width: #{$medium-breakpoint})";
+$small: "only screen and (max-width: #{$small-breakpoint})";
+$tiny: "only screen and (max-width: #{$tiny-breakpoint})";
+
+// Neat settings
+$neat-grid: (
+  columns: 12,
+  gutter: 40px,
+);
+
+$medium-grid: (
+  columns: 12,
+  gutter: 30px,
+);
+
+$small-grid: (
+  columns: 6,
+  gutter: 30px,
+);
+
+$touching-grid: (
+  columns: 1,
+  gutter: 0
+);
+
+$page-width: 1418px + 2 * 40px;
+$page-medium-width: 1268px + 2 * 40px;
+
+// Mark Pro Typeface
+$montserrat: (
+  "Montserrat",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Helvetica Neue",
+  "Helvetica",
+  "Noto",
+  "Ubuntu",
+  sans-serif
+);

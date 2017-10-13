@@ -1,0 +1,31 @@
+.social {
+  text-align: center;
+
+  .icon,
+  .link {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+  }
+
+  .icon {
+    height: 39px;
+    line-height: 0;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .link {
+    color: $color-light-blue;
+    font-size: em(18px);
+    margin: 0 5px;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      color: shade($color-light-blue, 20%);
+    }
+  }
+}

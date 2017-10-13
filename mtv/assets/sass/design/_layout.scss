@@ -1,0 +1,75 @@
+html {
+  @media #{$small} {
+    font-size: 80%;
+  }
+}
+
+// Basic Layout Considerations
+body > section {
+    @include clearfix();
+    padding-bottom: 36px;
+    padding-top: 37px;
+
+    > .container {
+        @include grid-container;
+        margin: 0 auto;
+        max-width: $page-width;
+    }
+
+    .section-header,
+    .section-title {
+        text-align: center;
+    }
+}
+
+.grid-3 {
+    @include grid-column(3);
+
+    @media #{$medium} {
+        @include grid-column(6, $medium-grid);
+    }
+}
+
+.grid-4 {
+    @include grid-column(4);
+
+    @media #{$medium} {
+        @include grid-column(6, $medium-grid);
+    }
+
+    @media #{$small} {
+        @include grid-column(6, $small-grid);
+    }
+}
+
+.grid-12 {
+    @include grid-column(12);
+
+    @media #{$small} {
+        @include grid-column(6, $small-grid);
+    }
+}
+
+#header {
+    padding-top: 40px;
+
+    @media #{$large} {
+        padding-top: 50px;
+    }
+
+    @media #{$small} {
+        padding-top: 20px;
+    }
+}
+
+#footer {
+    padding-bottom: 30px;
+
+     @media #{$large} {
+        padding-bottom: 60px;
+    }
+
+    @media #{$small} {
+        padding-top: 20px;
+    }
+}
